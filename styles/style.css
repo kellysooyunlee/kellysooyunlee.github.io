@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   padding: 50 100px;
   justify-content: space-between;
+  color: #4d4d4d;
 }
 
  header {
@@ -16,14 +17,16 @@ body {
 
   .logo {
       flex: 0 150px;
+      flex-wrap: nowrap;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: 'Cream', sans-serif;
       font-size: 40px;
   }
 
 
-  main, article {
+  main {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -31,9 +34,9 @@ body {
 
   .mod {
     flex: 1;
-/*    justify-content: space-between;*/
-  }
 
+  }
+/*
 
 .feature {
       flex: 1;
@@ -43,35 +46,11 @@ body {
   .col {
       flex: 1;
   }
-
-@media screen and (min-width: 1025px) {
-  header {
-          flex-direction: row;
-          justify-content: space-between;
-      }
-
-      nav ul {
-          display: flex;
-      }
-  }
-
-  main {
-          flex-direction: row;
-      }
-
-      aside {
-          flex: 1;
-      }
-
-      article {
-          flex: 3;
-      }
-  }
-
+*/
 
 
 body {
-  font-family: sans-serif;
+  font-family: 'helvetica neue', sans-serif;
   font-size: 16px;
   line-height: 1.4em;
 }
@@ -104,15 +83,16 @@ section {
 }
 
 .mod {
-  padding: 10px;
-  background-color: papayawhip;
-  border: 3px #222222;
   height: 300px;
+  width: auto;
+  padding: 10px;
+  background-color: #E5F9FA;
+  border: solid 3px #4d4d4d;
   border-radius: 20px;
   margin: 50px 20px;
 }
 
-aside {
+/*aside {
   background-color: none;
   padding: 50px;
   box-sizing: border-box;
@@ -123,3 +103,31 @@ footer {
   padding: 50px;
   box-sizing: border-box;
 }
+*/
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 1025px) {
+  header {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+
+      nav ul {
+          display: flex;
+      }
+  }
+
+  main {
+          flex-direction: row;
+      }
+
+      aside {
+          flex: 1;
+      }
+
+      article {
+          flex: 3;
+      }
+  }
+
