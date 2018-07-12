@@ -3,13 +3,15 @@
 body {
   /* three properties */
   min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 50 100px;
+  justify-content: space-between;
 }
 
  header {
-      display: flex;
-      flex-direction: column;
+  display: flex;
+  flex-direction: column;
   }
 
   .logo {
@@ -17,6 +19,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 40px;
   }
 
 
@@ -26,8 +29,9 @@ body {
       flex-direction: column;
   }
 
-  .content {
-      flex: 2;
+  .mod {
+    flex: 1;
+/*    justify-content: space-between;*/
   }
 
 
@@ -65,7 +69,6 @@ body {
   }
 
 
-/* SETUP (DON'T CHANGE THIS) */
 
 body {
   font-family: sans-serif;
@@ -75,36 +78,38 @@ body {
 
 header {
   background-color: none;
-  box-sizing: border-box;
+/*  box-sizing: border-box;*/
 }
 
 nav {
-  background-color: none;
+ 
 }
 
 nav ul li {
-  border: 0px solid grey;
   box-sizing: border-box;
   padding: 15px;
 }
 
 article {
   background-color: none;
-  box-sizing: border-box;
+/*  box-sizing: border-box;*/
 }
 
 section {
-  border: 1px solid grey;
+/*  border: 1px solid grey;*/
 }
 
 .content {
   padding: 50px;
 }
 
-.col {
+.mod {
   padding: 10px;
   background-color: papayawhip;
-  margin: 5px;
+  border: 3px #222222;
+  height: 300px;
+  border-radius: 20px;
+  margin: 50px 20px;
 }
 
 aside {
