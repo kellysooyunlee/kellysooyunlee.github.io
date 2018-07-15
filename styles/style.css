@@ -1,48 +1,53 @@
-/* FLEXBOX GOES HERE */
-
 body {
-  /* three properties */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 40px 20px;
   padding: 50 100px;
   justify-content: space-between;
   color: #404040;
 }
 
- header {
+header {
+display: flex;
+flex-direction: column;
+}
+
+.logo {
+    /*flex: 0 150px;*/
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cream', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding: 0 0 0 20px;
+}
+
+main {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .logo {
-      /*flex: 0 150px;*/
-      flex-wrap: nowrap;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Cream', sans-serif;
-      font-size: 40px;
-      padding: 0 0 0 20px;
-  }
+.mod {
+  flex: 1;
+/*  min-width: 300px;*/
+}
 
 
-  main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-  }
-
-  .mod {
-    flex: 1;
-
-  }
-
-
-body {
-  font-family: 'Avenir', sans-serif;
-  font-size: 16px;
+nav a {
+  font-family: 'System UI', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  text-decoration: none;
  /* line-height: 1.4em;*/
+}
+
+nav a:hover {
+  color: #404040;
 }
 
 header {
@@ -51,6 +56,10 @@ header {
 }
 
 nav {
+  display: flex;
+}
+
+nav ul {
   display: flex;
 }
 
@@ -79,7 +88,7 @@ section {
   background-color: #E5F9FA;
   border: solid 3px #404040;
   border-radius: 20px;
-  margin: 50px 20px;
+  margin: 40px 25px;
 }
 
 /*aside {
@@ -96,18 +105,23 @@ footer {
 */
 
 /*MEDIA QUERIES*/
-
 @media screen and (min-width: 1025px) {
   header {
-          flex-direction: row;
-          justify-content: space-between;
-      }
+    flex-direction: row;
+    justify-content: space-between;
+    }
 
-      nav ul {
-          display: flex;
-      }
+  .logo {
+    justify-content: left;
+    align-items: left;
   }
 
+  nav {
+    justify-content: left;
+  }
+}
+
+/* --- MEDIA QUERIES END -- */
   main {
           flex-direction: row;
       }
