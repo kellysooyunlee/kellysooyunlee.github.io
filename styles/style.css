@@ -98,11 +98,29 @@ section {
 }
 
 
+span {
+  opacity: 0;
+  font-family: 'System UI', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #595959;
+}
+
 img {
   border-radius: 20px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+img:hover {
+  opacity: .75;
+
+}
+
+figure:hover+span {
+  text-align: center;
+  opacity: 1;
 }
 
 
