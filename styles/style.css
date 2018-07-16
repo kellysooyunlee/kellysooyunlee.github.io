@@ -10,9 +10,9 @@ body {
 }
 
 header {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo {
@@ -97,17 +97,12 @@ section {
   margin: 30px 25px;
 }
 
-/*
-#feature1 {
-  background-image: url("./images/1.png");
-  background-position: ;
-}*/
 
 img {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  object-fit: ;
+  object-fit: cover;
 }
 
 
