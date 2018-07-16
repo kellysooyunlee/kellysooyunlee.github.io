@@ -24,13 +24,18 @@ header {
     padding: 0 0 0 20px;
 }
 
-main {
-  flex: 1;
-  display: flex;
+article {
   margin: 0px;
   padding: 0px;
   border: solid 3px #404040;
   border-radius: 20px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  padding: 0px;
+
 }
 
 
@@ -82,8 +87,8 @@ p {
   font-size: 11px;
   color: #595959;
   text-transform: capitalize;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   margin-left: 30px;
 }
 
@@ -94,16 +99,20 @@ section {
   background-color: #E5F9FA;
   border: solid 3px #404040;
   border-radius: 20px;
-  margin: 30px 25px;
+  margin: 0px 25px 30px 25px;
+  position: relative;
 }
 
 
 span {
   opacity: 0;
   font-family: 'System UI', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
+  text-transform: uppercase;
   color: #595959;
+  position: relative;
+
 }
 
 img {
@@ -115,11 +124,19 @@ img {
 
 img:hover {
   opacity: .75;
+}
 
+.mod figure {
+  background: #00004d;
+  border-radius: 20px;
+}
+
+
+.mod:hover {
+  text-align: center;
 }
 
 figure:hover+span {
-  text-align: center;
   opacity: 1;
 }
 
