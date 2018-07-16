@@ -10,15 +10,13 @@ body {
 
 header {
 display: flex;
-flex-direction: column;
+flex-direction: row;
+justify-content: space-between;
 }
 
 .logo {
     /*flex: 0 150px;*/
-    flex-wrap: nowrap;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Cream', sans-serif;
     font-weight: 600;
     font-size: 40px;
@@ -31,15 +29,11 @@ main {
   flex-direction: row;
 }
 
-.mod {
-  flex: 1 300px;
-/*  min-width: 300px;*/
-}
 
-/*a:hover {
+a:hover {
   cursor: url('./images/fire.png'), auto;
 }
-*/
+
 
 #featured {
   margin-top: 20px;
@@ -65,9 +59,6 @@ header {
 /*  box-sizing: border-box;*/
 }
 
-nav {
-  display: flex;
-}
 
 nav ul {
   display: flex;
@@ -95,9 +86,9 @@ p {
 }
 
 
-.mod {
+section {
   height: 300px;
-  width: auto;
+  width: 300px;
   padding: 10px;
   background-color: #E5F9FA;
   border: solid 3px #404040;
@@ -107,24 +98,22 @@ p {
 
 
 /*MEDIA QUERIES*/
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1025px) {
   header {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     }
-
+/*
   .logo {
-    flex-wrap: nowrap;
-    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-  }
+  }*/
 
   nav {
     justify-content: left;
+    flex-wrap: nowrap;
   }
 
-  main {
+  section {
     flex-basis: 300px;
     }
 
