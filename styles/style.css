@@ -115,14 +115,14 @@ span {
 
 }
 
-img {
+.mod img {
   border-radius: 20px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-img:hover {
+.mod img:hover {
   opacity: .4;
 }
 
