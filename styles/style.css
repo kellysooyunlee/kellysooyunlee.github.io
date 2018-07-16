@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 40px 20px;
-  padding: 50 100px;
+  padding: 50px 100px;
   justify-content: space-between;
   color: #404040;
 }
@@ -28,16 +28,25 @@ flex-direction: column;
 main {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .mod {
-  flex: 1;
+  flex: 1 300px;
 /*  min-width: 300px;*/
 }
 
+/*a:hover {
+  cursor: url('./images/fire.png'), auto;
+}
+*/
 
-nav a {
+#featured {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+nav a{
   font-family: 'System UI', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -48,6 +57,7 @@ nav a {
 
 nav a:hover {
   color: #404040;
+  cursor: url('./images/fire.png'), auto;
 }
 
 header {
@@ -68,18 +78,22 @@ nav ul li {
   padding: 15px;
 }
 
-article {
-  background-color: none;
-/*  box-sizing: border-box;*/
+
+p {
+  font-family: 'System UI', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #404040;
 }
 
-section {
-/*  border: 1px solid grey;*/
+#featured {
+  font-family: 'System UI', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #595959;
+  text-transform: uppercase;
 }
 
-.content {
-  padding: 50px;
-}
 
 .mod {
   height: 300px;
@@ -88,21 +102,9 @@ section {
   background-color: #E5F9FA;
   border: solid 3px #404040;
   border-radius: 20px;
-  margin: 40px 25px;
+  margin: 30px 25px;
 }
 
-/*aside {
-  background-color: none;
-  padding: 50px;
-  box-sizing: border-box;
-}
-
-footer {
-  background-color: none;
-  padding: 50px;
-  box-sizing: border-box;
-}
-*/
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 1025px) {
@@ -112,26 +114,21 @@ footer {
     }
 
   .logo {
-    justify-content: left;
-    align-items: left;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   nav {
     justify-content: left;
   }
+
+  main {
+    flex-basis: 300px;
+    }
+
 }
 
 /* --- MEDIA QUERIES END -- */
-  main {
-          flex-direction: row;
-      }
-
-      aside {
-          flex: 1;
-      }
-
-      article {
-          flex: 3;
-      }
-  }
 
