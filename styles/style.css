@@ -97,6 +97,19 @@ section {
   margin: 30px 25px;
 }
 
+/*
+#feature1 {
+  background-image: url("./images/1.png");
+  background-position: ;
+}*/
+
+img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: ;
+}
+
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1025px) {
